@@ -1,6 +1,6 @@
 <header>
   	<hgroup>
-    	<h1>Share the movie you like!</h1>
+    	<h1>Share the movie you don't like!</h1>
     	<h2>Search and review your favorite movie</h2>
     </hgroup>
     <nav>
