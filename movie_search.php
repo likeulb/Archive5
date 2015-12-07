@@ -1,7 +1,9 @@
-<?php
-	echo '<h1>Please enter movie title</h1>';
+ <!DOCTYPE html>
+<html lang="en">
 
-?>
+
+<body>
+
 
 <form action="movies.php" method="post">
 <label>Enter title:</label>
@@ -9,3 +11,15 @@
 <input type="submit" value="Search" />
 <input type="hidden" name="action" value="list" /><br>
 </form>
+
+</body>
+ 
+  </html>
+  
+  
+ 
+  
+ 
+  
+  
+ 

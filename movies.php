@@ -37,6 +37,12 @@ include('header.php');
   <section>
   <?php
   	switch($action) {
+  	        case 'listAdmin':
+  	            include('movie_list_Admin.php');
+				break;
+  	        case 'addMovie':
+  	            include('movie_addmovie.php');
+				break;
 			case 'list':
 				include('movie_list.php');
 				break;
@@ -61,6 +67,10 @@ include('header.php');
 			    $title =  $_POST['title'];
 				include('movie_deletelist.php');
 				break;
+			case 'deletereview':
+			    $title =  $_POST['movieid'];
+				include('movie_deletereview_confirm.php');
+				break;
 		    case 'update':
 			    $title =  $_POST['title'];
 				$MovieID= $_POST['movieID'];
@@ -73,4 +83,10 @@ include('header.php');
   
 
 </body>
+<footer>
+	<p>&copy; TCSS545, Group 8??</p>
+  </footer>
 </html>
+
+
+ 

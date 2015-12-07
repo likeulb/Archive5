@@ -46,7 +46,7 @@
 <input type="radio" name="Sex" value="M" /><br/>
 <label>Female：</label>
 <input type="radio" name="Sex" value="F" /><br/>
-<input type="submit" value="Register" onclick="location.href='../project_movie/index.php'" >
+<input type="submit" value="Register" onclick="location.href='../index.php'" >
 </form>
 </section>
 </body>
