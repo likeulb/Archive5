@@ -103,6 +103,27 @@ section a:link, section a:visited {
 section a:hover, section a:focus { 
     color: #669966;
 }
+
+label{
+    display: inline-block;
+    float: left;
+    clear: left;
+    width: 250px;
+    text-align: right;
+    padding: 5px;
+}
+
+input {
+	display: inline-block;
+  	float: left;	
+}
+
+button {
+	display: inline-block;
+	float: left;
+	
+}
+
 /* Footer */
 footer { 
 	clear: both;

@@ -52,21 +52,22 @@ echo $error;
 <body>
 
  <?php include('header.php'); ?>
+ 
+ <section>
+ 	<h1>Welcome to our Movies site! Please login!</h1>
+ </section>
 
   <section>
     <form action="" method="post">
-   
-<label>User Name :</label>
-<input type="text" name="username"/><br/>
-<label> Password :</label>
-<input type="password" name="password"/><br/>
-<input type="submit" value=" Log in "/><br />
-</form>
+		<label>User Name :</label>
+		<input type="text" name="username"/><br/>
+		<label>Password :</label>
+		<input type="password" name="password"/><br/>
+		<button type="submit">Log in</button><br/>
+	</form>
   </section>
 
-<section>
- <h1>Welcome to our Movies site! Please login!</h1>
-</section>
+
 
   <footer>
 	<p>&copy; TCSS545, Group 8??</p>
