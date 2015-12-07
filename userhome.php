@@ -20,7 +20,7 @@ include ('header1.php');
     </head>
  <body>
     <section>
-    <h1>Welcome to our Movies site!</h1>
+    
     <p><a href="movies.php?action=list"> Movies you haven't reviewed</a></p>
     <p><a href="movies.php?action=mylist">My Reviewed Movie</a></p>  
     <p><br></p>
@@ -29,5 +29,7 @@ include ('header1.php');
   </section>
     
  </body>
- 
+  <footer>
+	<p>&copy; TCSS545, Group 8??</p>
+  </footer>
  </html>

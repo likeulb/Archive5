@@ -11,7 +11,7 @@
 			$db->exec($insert_statement);
 		}
 		catch(Exception $e) {
-					echo "Inserting Movie";
+					echo "Deleting Movie";
 		}
 		header('Location: movies.php?action=user_create_list');
 

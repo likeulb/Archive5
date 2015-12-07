@@ -1,6 +1,6 @@
 <?php
 
-echo '<h2>Movie List</h2>';
+echo '<h2>Have you seen those movies?</h2>';
 
 if (isset($_POST['title']))
     $filter = addslashes($_POST['title']);
@@ -11,17 +11,17 @@ if (!isset($db)) {
     require('dbconnect.php');
     $db = get_connection();
 }
-$select_statement = "SELECT * FROM Movies ";
+$select_statement = "SELECT MovieName, MovieYear, Introduction, MovieGenre, MovieID FROM MoviesProject ";
 $user = $_SESSION['login_user'];
 if ($filter != '')
-    $select_statement .= "WHERE MovieName LIKE '%$filter%';";
+    $select_statement .= "WHERE MovieName LIKE '%$filter%' AND MovieID not in (select Movies_MovieID from ReviewMovie where User_UserID='$user');";
 else
     $select_statement .= "where MovieID not in (select Movies_MovieID from ReviewMovie where User_UserID='$user');";
 $movies = $db->query($select_statement);
 
 if ($movies != null) {
     echo "<table border='1'>";
-    echo "<tr><th></th><th>Movie Name</th><th>Year</th><th>Length</th><th>Genre</th></tr>";
+    echo "<tr><th></th><th>Movie Name</th><th>Year</th><th>Introduction</th><th>Genre</th></tr>";
     foreach ($movies as $movie) {
         $title = htmlentities($movie[1], ENT_QUOTES);
         #echo $title;

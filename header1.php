@@ -1,7 +1,7 @@
 <header>
   	<hgroup>
-    	<h1>Share the movie you don't like!</h1>
-    	<h2>Search and review your favorite movie</h2>
+    	
+    	<h1>Search and review your favorite movie</h1>
     </hgroup>
     <nav>
 	  		<ul>
