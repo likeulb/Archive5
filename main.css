@@ -133,6 +133,9 @@ button {
 footer { 
 	clear: both;
 /* 	border-top: 2px solid black; */
+/* 	position: relative; */
+/* 	bottom: 0; */
+/* 	position:absolute; */
 	padding: 15px;
 } 
 footer p {

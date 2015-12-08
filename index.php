@@ -40,6 +40,8 @@ echo $error;
 }
 ?>
 
+<?php include('header.php'); ?>
+ 
 <!DOCTYPE html>
 
 <html lang="en">
@@ -51,7 +53,7 @@ echo $error;
 
 <body>
 
- <?php include('header.php'); ?>
+
  
  <section>
  	<h1>Welcome to our Movies site! Please login!</h1>
@@ -70,7 +72,7 @@ echo $error;
 
 
   <footer>
-	<p>&copy; TCSS545, Group 8??</p>
+	<p>&copy; TCSS545, Group 8</p>
   </footer>
 </body>
 </html>
