@@ -4,7 +4,7 @@ session_start();
 if(isset($_SESSION['login_user']))
 {
    # echo 'You are Logged as '.$_SESSION['login_user'].'<br/>';
-   # include('header1.php'); 
+   include('headerAdmin.php'); 
     
 }
 else
@@ -26,15 +26,10 @@ else
 <html lang="en">
 <head>
 	<meta charset="utf-8" />
-	
-	
-	  		<ul>
-	    		<a href="adminhome.php" class="current">Get Back</a>
-	    		
-	  		</ul>
-  	
-	
-	
+	<link rel="stylesheet" href="main.css">
+		<ul>
+			<a href="adminhome.php" class="current">Get Back</a>
+		</ul>
 </head>
 
 <body>
