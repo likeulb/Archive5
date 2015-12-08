@@ -84,7 +84,7 @@ include('header.php');
 
 </body>
 <footer>
-	<p>&copy; TCSS545, Group 8??</p>
+	<p>&copy; TCSS545, Group 8</p>
   </footer>
 </html>
 
