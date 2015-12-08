@@ -15,7 +15,11 @@ $select_statement = "SELECT MovieName, MovieYear,MovieGenre, starName, Introduct
 FROM MoviesProject, StarsInProject where StarsInProject.MovieID=MoviesProject.MovieID;";
 
 
+
+
+
 $movies = $db->query($select_statement);
+
 
 if ($movies != null) {
     echo "<table border='1'>";
